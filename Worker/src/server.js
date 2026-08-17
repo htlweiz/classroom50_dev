@@ -4,7 +4,7 @@ const port = Number(process.env.PORT || 8787)
 const clientId = process.env.GITHUB_CLIENT_ID
 const clientSecret = process.env.GITHUB_CLIENT_SECRET
 const allowedOrigins = new Set(
-  (process.env.ALLOWED_ORIGINS || "https://classroom50.org,https://preview.classroom50.org")
+  (process.env.ALLOWED_ORIGINS || "https://classroom50.org,https://preview.classroom50.org,https://classroom50.htlweiz.at")
     .split(",")
     .map((origin) => origin.trim())
     .filter(Boolean),

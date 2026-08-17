@@ -22,7 +22,7 @@ The local endpoint is `http://localhost:8787`. For local frontend development, p
 VITE_GITHUB_PROXY_BASE=http://localhost:8787
 ```
 
-The production frontend must use an HTTPS domain in `VITE_GITHUB_PROXY_BASE`, with TLS terminated by a reverse proxy or load balancer in front of this container.
+The production frontend must use an HTTPS domain in `VITE_GITHUB_PROXY_BASE`, with TLS terminated by a reverse proxy or load balancer in front of this container. For `https://classroom50.htlweiz.at`, keep that exact origin in `ALLOWED_ORIGINS` and build the frontend with the public proxy URL.
 
 ## Deployment
 
